@@ -1,0 +1,78 @@
+.header {
+  display: flex; /* Flexbox etkinleştirme */
+  justify-content: center; /* Yatayda ortalama */
+  align-items: center; /* Dikeyde ortalama */
+  height: 100px; /* Header yüksekliği (örnek) */
+  background-color: #1a1b41; /* Arka plan (isteğe bağlı) */
+  color: white;
+}
+
+/* Ana Kapsayıcı */
+.app-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #fcffeb;
+  min-height: 100vh; /* Tam ekran yüksekliği */
+  min-width: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Ortala */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.app-creator {
+  border: 1px solid black;
+  background-color: #c9c9c96d;
+  width: 400px;
+  min-width: 300px;
+  height: 250px;
+  border-radius: 5px;
+  padding: 10px;
+}
+/* Görev İçeriği: Liste ve Detaylar */
+.list-and-details {
+  display: flex; /* Yan yana yerleşim */
+  flex-direction: column;
+  justify-content: space-between; /* Aralıklı yerleştir */
+  gap: 10px; /* Bölmeler arasında boşluk */
+  width: 100%; /* Tam genişlik */
+  max-width: 500px;
+  margin: 5px;
+}
+
+/*Listenin bulunduğu çerçeve*/
+.task-list-window {
+  border-radius: 5px;
+  padding: 0px;
+}
+
+/* Liste Elemanları */
+.task-list-window-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #d2b7bb90;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 500px;
+  max-width: 500px;
+}
+
+.task-list-window-item:hover {
+  background-color: #fcffeb;
+}
+
+/*task detaylarının bulunduğu kutu*/
+.task-list-details {
+  background-color: #bce2ccbc;
+  border: 1px solid;
+  border-color: #444545;
+  border-radius: 5px;
+  padding: 10px;
+  word-wrap: break-word; /* Uzun kelimeleri satıra sığdır */
+  overflow-wrap: break-word; /* Alternatif sarma kuralı */
+  white-space: normal; /* Normal metin sarma */
+  max-width: 500px;
+}
